@@ -1,0 +1,89 @@
+* { margin : 0; padding: 0; }
+
+@font-face {
+  font-family: "MinionRegular";
+  font-weight: regular;
+  src: url('../font/MinionPro-Regular.otf');
+}
+
+@font-face {
+  font-family: "MinionMedium";
+  font-weight: medium;
+  src: url('../font/MinionPro-Medium.otf');
+}
+
+
+@font-face {
+  font-family: "MinionSemibold";
+  font-weight: semibold;
+  src: url('../font/MinionPro-Semibold.otf');
+}
+
+
+.menu { width : 83.34%; height: 6%;top: -9%; margin: auto; position: fixed; z-index: 10;  }
+.menu li { list-style: none; display: inline-block; position: absolute;}
+.menu a {padding-bottom: 6px; text-decoration: none; color: black; font-family: 'Source Sans Pro', sans-serif; font-size: 1.125rem; font-weight: 400;}
+.menu_logo { text-transform: uppercase; left: 50%; transform: translateX(-50%); }
+.menu_logo a { text-transform: uppercase; left: 50%; transform: translateX(-50%); }
+.menu_about { left: 0%; }
+.menu_projects { right : 0%; }
+
+
+.offset-c0 {margin-left: 0%;}
+.offset-c1 {margin-left: 8.33%;}
+.offset-c2 {margin-left: 16.66%;}
+.offset-c3 {margin-left: 24.99%;}
+.offset-c4 {margin-left: 33.32%;}
+.offset-c5 {margin-left: 41.65%;}
+.offset-c6 {margin-left: 49.98%;}
+.offset-c7 {margin-left: 58.31%;}
+.offset-c8 {margin-left: 66.64%;}
+.offset-c9 {margin-left: 74.97%;}
+.offset-c10 {margin-left: 83.3%;}
+.offset-c11 {margin-left: 91.63%;}
+.offset-c12 {margin-left: 100%;}
+
+.mobile {display: none;}
+
+@media all and (max-width: 1600px) {
+  html { font-size : 14px; }
+}
+@media all and (max-width: 1400px) {
+  html { font-size : 13px; }
+}
+@media all and (max-width: 1200px) {
+  html { font-size : 12px; }
+}
+@media all and (max-width: 1200px) {
+  html { font-size : 11px; }
+}
+@media all and (max-width: 1024px) {
+  html { font-size : 10px; }
+}
+@media all and (max-width: 900px) {
+  html { font-size : 9px; }
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 667px) {
+  body { width : 100vw; }  
+  html { font-size : 16px; }
+
+  .desktop {display: none;}
+  .mobile {display: inherit;}
+
+  .menu.mobile { position: absolute; top: 3%; width: 100%; z-index:100;}
+  .menu_mobile_logo { left: 0%; margin-top: 9vh; text-transform: uppercase;}
+  .menu_mobile_burger { margin-top: 9vh; right: 12%; } 
+  .menu_mobile_burger img { height: 5vh; }
+  .menu_mobile_toggle { width: 100vw; height: 100vh; position: fixed; z-index:200; background-color: #e5e5e5; top:0; left:0; display: none;}
+  .menu_mobile_cross { position: absolute; margin-top: 9vh; right: 12%; }
+  .menu_mobile_cross img { height: 5vh; }
+  .menu_mobile_toggle ul { position : absolute; margin: auto; text-align: center; width: 66.64%; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+  .menu_mobile_toggle ul a { font-family: "MinionSemibold";  text-decoration: none; color: black; font-size: 3.5rem; line-height: 7rem;}
+  .active { padding: 0; background-color: white;  }
+  .active a { opacity : 0; border-bottom: 45px solid white; }
+}

@@ -1,0 +1,46 @@
+.menu.mobile a { color: white; }
+
+.menu { left: 8.33%; width : 83.34%; height: 6%; top: 7.1%; margin: auto; position: fixed;  }
+
+.right_part { background-color: #e5e5e5; width : 100%; height: 100%; position: fixed; z-index: -1; }
+
+.list_project_img { position: absolute; margin-top: 18.75vh; width: 49.98%; }
+.list_project_img li {width: 100%; margin-bottom: 8.33vw; text-align: center;}
+.list_project_img li iframe {width: 100%;}
+.list_project_img li img {width: 100%;}
+.others_projects { width : 100%; height: 80px; line-height: 80px; }
+.others_projects a { display : block; float: left; width : 50%; height: 100%; text-decoration: none; color: black; font-size: 1.2rem;}
+.others_projects img { margin: 0 2vw; height: 1.25rem; top: 50%; transform: translateY(+25%); }
+.previous_project {font-size: 1.125rem; font-family: 'Source Sans Pro'; color: #1e1f24; background-color: #f1f1f1; text-align: left; transition: all 0.5s; -webkit-transition: all 0.5s }
+.next_project {font-size: 1.125rem; font-family: 'Source Sans Pro'; color: #e5e5e5; background-color: #e5e5e5; text-align: right; transition: all 0.5s; -webkit-transition: all 0.5s }
+.previous_project:hover~.next_project{ opacity: 0.2; }
+.next_project:hover~.previous_project{opacity: 0.2; }
+
+.description  { margin-top: 18.75vh; margin-left : 4.165% ; width: 20.825% }
+.description h2 { font-family: "MinionSemibold"; color: #1e1f24; font-size: 2.8125rem; font-weight: bold; margin-bottom: 10%;}
+.description h3 { font-family: 'Source Sans Pro'; color: #1e1f24; font-weight: bold; font-size: 1.1rem; margin-bottom: 5.5%;}
+.description p { font-family: 'Source Sans Pro'; font-weight: regular; color: #474951; margin-bottom: 10%; font-size: 1rem; line-height: 1.2rem; line-height: 20px;}
+.description ul li { font-family: 'Source Sans Pro'; margin-top: 3%; line-height: 10px; color: #474951; }
+.description ul { margin-bottom: 10%; }
+.description a { font-family: 'Source Sans Pro'; font-weight: regular; color: #474951; font-size: 1rem; line-height: 1.2rem; line-height: 20px;}
+
+
+/* MOBILE */
+
+@media (max-width: 667px) {
+  body { overflow-x: hidden;}
+
+  .list_project_img { margin-top: 10.85vh; width: 83.3%; }
+  
+  .cover {overflow: hidden; display: flex;  background-size:cover; margin-top: 0; height: 100vh; width: 100%; justify-content:center; align-items:center; }
+  .cover h1 { position: absolute; font-family: "MinionSemibold"; font-size: 4.5rem; text-align: center; color: white; z-index: 2;}
+  .cover img { margin-left: 0px; width: 100%;  z-index: 1;}
+
+  .right_part { background-color: white; width : 100%; height: 100%; margin-left: 0; position: inherit; }
+  
+  .description { margin-top: 0; margin-left : 8.33% ; width: 83.3% }
+  .description h3 { margin-top: 9.15vh; line-height: 1.2rem;}
+  .others_projects a:nth-child(2)  {margin-bottom: 7.78vh;}
+  .others_projects a { display : block; float: inherit; width : 100%; height: 100%;  text-decoration: none; color: black; font-size: 1.2rem;}
+  .others_projects img { margin: 0 5vw; height: 0.8rem; top: 50%; transform: translateY(-5%); }
+}

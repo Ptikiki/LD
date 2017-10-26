@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">   
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Domingues</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/project_page.css" />
+
+  </head>
+    
+  <body>
+
+    <div id="app_project2">
+
+      <div class="cover mobile">
+        <h1 class="mobile"> {{ title }} </h1>
+        <img v-bind:src="image_mobile" class="mobile">
+      </div>
+
+      <nav class="menu offset-c1 desktop">
+        <ul>
+          <li class="menu_about"><a href="img/lucasdomingues.pdf" target="_blank">A propos</a></li>
+          <li class="menu_logo"><a href="index.html">Lucas Domingues</a></li>
+          <li class="menu_projects"><a href="index.html">Projets</a></li>
+        </ul>
+      </nav>
+
+      <nav class="menu mobile">
+        <ul>
+          <li class="menu_mobile_logo offset-c1 "><a href="#">Lucas Domingues</a></li>
+          <li class="menu_mobile_burger"><a href="#"><img src="img/menu_blanc.svg" alt="picto burger"></a></li>
+        </ul>
+      </nav>
+
+
+       <div class="menu_mobile_toggle mobile">
+          <a href="#" class="menu_mobile_cross"><img src="img/croix.svg" alt="picto croix"></a>
+          <ul>
+            <li><a href="index.html" >Accueil</a></li>
+            <li><a href="img/lucasdomingues.pdf">A propos</a></li>
+            <li><a href="mailto:domingues.luca@gmail.com">Contact</a></li>
+          </ul>
+        </div>
+
+      <div class="right_part offset-c8">
+
+        <div class="description">
+          <h2 class="desktop"> {{ title }} </h2>
+        
+          <h3>Description</h3>
+          <p> {{ description }} </p>
+
+          <h3>Rôles</h3>
+          <ul>
+            <li> {{ role1 }} </li>
+            <li> {{ role2 }} </li>
+          </ul>
+
+        </div>
+      </div>
+
+
+
+      <ul class="list_project_img offset-c1">
+        <li><iframe src="https://player.vimeo.com/video/140685513" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</li>
+        <li><img v-bind:src="image1"></li>
+        <li><img v-bind:src="image2"></li>
+        <li><img v-bind:src="image3"></li>
+        <li><img v-bind:src="image4"></li>
+        <div class="others_projects">
+          <a v-bind:href="previous_project" class="previous_project"><img src="img/left_arrow.svg" alt="picto_fleche">Projet précédent</a>
+          <a v-bind:href="next_project"  class="next_project">Projet suivant<img src="img/right_arrow.svg" alt="picto_fleche"></a>
+        </div>
+      </ul>
+      
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+
+    <script rel="javascript" type="text/javascript" src="js/datas/content.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+
+</html>

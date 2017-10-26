@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+      <meta charset="UTF-8">   
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lucas Domingues</title>
+
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/reset.css" />
+      <link rel="stylesheet" type="text/css" href="css/main.css" />
+      <link rel="stylesheet" type="text/css" href="css/home.css" />
+
+    </head>
+    
+    <body>
+
+      <div id="app">
+
+        <div class="background offset-c8"></div>
+
+        <div class="container">
+
+          <nav class="menu offset-c1 desktop">
+            <ul>
+              <li class="menu_about"><a href="img/lucasdomingues.pdf" target="_blank">A propos</a></li>
+              <li class="menu_logo"><a href="#">Lucas Domingues</a></li>
+              <li class="menu_projects"><a href="#anchor">Projets</a></li>
+            </ul>
+          </nav>
+
+          <nav class="menu mobile">
+            <ul>
+              <li class="menu_mobile_logo offset-c1 "><a href="#">Lucas Domingues</a></li>
+              <li class="menu_mobile_burger"><a href="#"><img src="img/menu.svg" alt="picto burger"></a></li>
+            </ul>
+          </nav>
+          <div class="menu_mobile_toggle mobile">
+            <a href="#" class="menu_mobile_cross"><img src="img/croix.svg" alt="picto croix"></a>
+            <ul>
+              <li><a class="active" href="#" >Accueil</a></li>
+              <li><a href="img/lucasdomingues.pdf">A propos</a></li>
+              <li><a href="mailto:domingues.luca@gmail.com">Contact</a></li>
+            </ul>
+          </div>
+
+          <div id="anchor"></div>
+
+          <div class="home_intro offset-c1 desktop">
+            <h1 class="home_intro_title">Bonjour</h1>
+            <p class="home_intro_text">Je m'appelle Lucas et suis étudiant en Design Interactif à l'<span class="strong">École des Gobelins, Paris</span>.</p>
+          </div>
+        
+          <ul class="list_projects offset-c4">
+              <li v-for="project in projects" class="block_project" v-bind:id="project.id">
+                <a v-bind:href="project.link.url">
+                <img v-bind:src="project.image">
+                <span class="project_title">{{ project.title }}</span>
+                </a>
+              </li>
+          </ul>
+
+<!--           <ul class="list_anchors">
+            <li v-for="project in projects" class="anchor_project">
+              <a href="#" class="anchor" v-bind:id="project.anchor"></a>
+            </li>
+          </ul> -->
+
+          <ul class="social desktop">
+            <li class="e-mail"><a href="mailto:domingues.luca@gmail.com">E-mail</a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/lucasdomingues/" target="_blank">Linked In</a></li>
+            <li class="dribbble"><a href="https://dribbble.com/Domingues" target="_blank">Dribbble</a></li>
+            <li class="instagram"><a href="https://www.instagram.com/lucas_dmgs/" target="_blank">Instagram</a></li>
+          </ul>
+
+        </div>
+      </div>
+
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+      <script src="https://unpkg.com/vue"></script>
+
+      <script rel="javascript" type="text/javascript" src="js/datas/content.js"></script>
+      <script rel="javascript" type="text/javascript" src="js/datas/designDatas.js"></script>
+
+      <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
+
+</html>
